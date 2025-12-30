@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h2>Enter Subject Marks</h2>
+    <form action="{{url_for('form')}}" method="post">
+        <label for="math">Math:</label>
+        <input type="text" id="math" name="math" min="0" max="100" required><br><br>
+
+        <label for="science">Science:</label>
+        <input type="text" id="science" name="science" min="0" max="100" required><br><br>
+
+        <label for="history">history:</label>
+        <input type="text" id="history" name="history" min="0" max="100" required><br><br>
+
+        <label for="geography">geography:</label>
+        <input type="text" id="geography" name="geography" min="0" max="100" required><br><br>
+
+        <label for="english">English:</label>
+        <input type="text" id="english" name="english" min="0" max="100" required><br><br>
+
+        <label for="hindi">hindi:</label>
+        <input type="text" id="hindi" name="hindi" min="0" max="100" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
