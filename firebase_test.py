@@ -14,7 +14,7 @@ Config = {
 firebase_ = pyrebase.initialize_app(Config)
 
 #from firebase import firebase
-#this is new technique
+#this is new configuration technique
 #from firebase import firebase
 #firebase = firebase.FirebaseApplication('https://my-first-flask-app-8519a-default-rtdb.firebaseio.com/', None)
 
@@ -43,5 +43,8 @@ data={
 data1 = db.get()
 
 for i in data1.each():
-    print(i.key())
-    print(i.val())
+    #print(i.key())
+    #print(i.val())
+    if i.key() == "First child":
+        for val in i.val():
+            print(val)
